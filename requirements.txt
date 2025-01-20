@@ -1,8 +1,7 @@
 streamlit
-openai
-nltk
 pandas
 numpy
+openai
 faiss
-re
-time
+nltk
+unidecode
