@@ -37,7 +37,7 @@ EMBEDDINGS_FILE = "embeddings.npy"
 # Leer el archivo Excel
 @st.cache_data
 def load_data():
-    excel_path = "C:/Users/Luis.fernandez/Desktop/Chunks.xlsx"  # Cambiar por la ruta de tu archivo
+    excel_path = "Chunks.xlsx"  # Cambiar por la ruta de tu archivo
     df = pd.read_excel(excel_path)
     return df
 
@@ -116,7 +116,7 @@ def get_base_messages():
 
 def run_chatbot():
     # Mostrar el logo y el título en una sección fija
-    logo_path = "C:/Users/Luis.fernandez/Desktop/Imagen2.png"
+    logo_path = "Imagen2.png"
 
     # Dividimos la página en columnas para colocar el logo y el título juntos
     with st.container():  # Usar contenedor para que el encabezado se mantenga fijo
