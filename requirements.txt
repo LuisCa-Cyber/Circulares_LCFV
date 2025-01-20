@@ -1,0 +1,8 @@
+streamlit
+openai
+nltk
+pandas
+numpy
+faiss
+re
+time
