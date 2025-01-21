@@ -26,11 +26,17 @@ client = OpenAI(api_key=api_key)
 #     # Asignar la clave API globalmente
 #     openai.api_key = api_key
 
+@st.cache_resource
+def download_nltk_data():
+    nltk.download('punkt')
+    nltk.download('stopwords')
+    nltk.download('wordnet')
 
+download_nltk_data()
 # Descargar recursos necesarios de NLTK
-nltk.download('stopwords')
-nltk.download('punkt')
-nltk.download('wordnet')
+# nltk.download('stopwords')
+# nltk.download('punkt')
+# nltk.download('wordnet')
 
 
 # Ruta del archivo de embeddings
