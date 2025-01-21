@@ -145,7 +145,7 @@ def run_chatbot():
         with col2:
             st.markdown(
                 """
-                <div style="text-align: rigth;">
+                <div style="text-align: center;">
                     <h1 style='color:gray; font-size: 1.8em;'>🤖 Sub. Arquitectura de datos<br>Asistente para CNE 2024 💭</h1>
                 </div>
                 """,
