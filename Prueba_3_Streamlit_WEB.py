@@ -138,6 +138,7 @@ def run_chatbot():
         #     st.image(logo_path, width=120)  # Mostrar el logo
 
         with col1:
+            st.markdown("<br>", unsafe_allow_html=True)
             st.image(logo_path, width=120)  # Mostrar el logo
 
         
