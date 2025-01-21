@@ -26,15 +26,14 @@ client = OpenAI(api_key=api_key)
 #     # Asignar la clave API globalmente
 #     openai.api_key = api_key
 
-import nltk
-nltk.data.path.append('./nltk_data')
-
 @st.cache_resource
 def download_nltk_data():
-    nltk.download('punkt', download_dir='./nltk_data', quiet=True)
-    nltk.download('stopwords', download_dir='./nltk_data', quiet=True)
-    nltk.download('wordnet', download_dir='./nltk_data', quiet=True)
+    import nltk
+    nltk.download('punkt', quiet=True)  # Esto incluye el recurso `punkt_tab`
+    nltk.download('stopwords', quiet=True)
+    nltk.download('wordnet', quiet=True)
 
+# Llama a la función para descargar los datos
 download_nltk_data()
 
 
