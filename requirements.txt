@@ -3,6 +3,6 @@ pandas
 numpy
 openai
 faiss-cpu
-nltk
+nltk==3.8.1
 python-dotenv
 openpyxl
