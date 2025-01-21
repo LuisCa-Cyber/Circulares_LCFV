@@ -2,6 +2,6 @@ streamlit
 pandas
 numpy
 openai
-faiss
+faiss-cpu
 nltk
 unidecode
