@@ -5,3 +5,4 @@ openai
 faiss-cpu
 nltk
 unidecode
+python-dotenv
