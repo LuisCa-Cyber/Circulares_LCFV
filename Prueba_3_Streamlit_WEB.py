@@ -28,11 +28,13 @@ client = OpenAI(api_key=api_key)
 
 @st.cache_resource
 def download_nltk_data():
-    nltk.download('punkt')
-    nltk.download('stopwords')
-    nltk.download('wordnet')
+    nltk.download('punkt', quiet=True)
+    nltk.download('stopwords', quiet=True)
+    nltk.download('wordnet', quiet=True)
 
+# Llama a la función para descargar los datos
 download_nltk_data()
+
 # Descargar recursos necesarios de NLTK
 # nltk.download('stopwords')
 # nltk.download('punkt')
