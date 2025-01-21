@@ -134,9 +134,19 @@ def run_chatbot():
     with st.container():  # Usar contenedor para que el encabezado se mantenga fijo
         col1, col2 = st.columns([1, 5])  # Ajustar el ancho de las columnas
 
-        with col1:
-            st.image(logo_path, width=120)  # Mostrar el logo
+        # with col1:
+        #     st.image(logo_path, width=120)  # Mostrar el logo
 
+        with col1:
+            st.markdown(
+                """
+                 <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <img src="{logo_path}" style="width: 120px;">
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
+        
         with col2:
             st.markdown(
                 """
