@@ -1,7 +1,7 @@
 # 🤖 Asistente Virtual FNG - Circulares Normativas 2024
 
 <p align="center">
-  <img src="https://www.fng.gov.co/_next/image?url=%2Fimages%2Finstitucional%2Flogo_fng.png&w=256&q=75" alt="Logo FNG">
+  <img src="https://colombiafintech.co/static/uploads/Fondo-Nacional-de-Garant%C3%ADas-FNG.png" alt="Logo FNG">
 </p>
 
 ## 📋 Descripción
