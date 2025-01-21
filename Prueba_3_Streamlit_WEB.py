@@ -137,15 +137,26 @@ def run_chatbot():
         # with col1:
         #     st.image(logo_path, width=120)  # Mostrar el logo
 
+        # with col1:
+        #     st.markdown(
+        #         """
+        #          <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        #         <img src="""" + logo_path + """" style="width: 120px;">
+        #         </div>
+        #         """,
+        #         unsafe_allow_html=True
+        #     )
+
         with col1:
             st.markdown(
                 """
-                 <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
-                <img src="""" + logo_path + """" style="width: 120px;">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <img src="{0}" style="width: 120px;">
                 </div>
-                """,
+                """.format(logo_path),
                 unsafe_allow_html=True
             )
+
         
         with col2:
             st.markdown(
