@@ -85,17 +85,14 @@ Las contribuciones son bienvenidas. Por favor, sigue estos pasos:
 5. Push a la rama (`git push origin feature/NuevaFuncionalidad`)
 6. Abre un Pull Request
 
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT
-
 ## 📞 Contacto
 
-Luis Carlos Fernández - Subdirección de Arquitectura de Datos FNG
-
+Luis Carlos Fernández - Ingeniero de Datos e IA en Fondo Nacional de Garantías
+Correo empresa: Luis.Fernandez@fng.gov.co
+Correo personal: luiscafer728@hotmail.com - luisfernandezv728@gmail.com
 Link del proyecto: [https://github.com/LuisCa-Cyber/Circulares_LCFV](https://github.com/LuisCa-Cyber/Circulares_LCFV)
 
 ---
 <p align="center">
-  Desarrollado con ❤️ por la Subdirección de Arquitectura de Datos
+  Desarrollado con ❤️ por la Subdirección de Arquitectura de Datos - FNG
 </p>
