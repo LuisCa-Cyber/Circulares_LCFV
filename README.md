@@ -88,8 +88,11 @@ Las contribuciones son bienvenidas. Por favor, sigue estos pasos:
 ## 📞 Contacto
 
 Luis Carlos Fernández - Ingeniero de Datos e IA en Fondo Nacional de Garantías
+
 Correo empresa: Luis.Fernandez@fng.gov.co
+
 Correo personal: luiscafer728@hotmail.com - luisfernandezv728@gmail.com
+
 Link del proyecto: [https://github.com/LuisCa-Cyber/Circulares_LCFV](https://github.com/LuisCa-Cyber/Circulares_LCFV)
 
 ---
