@@ -59,7 +59,6 @@ streamlit run Prueba_3_Streamlit_WEB.py
 
 ```
 ├── Prueba_3_Streamlit_WEB.py   # Archivo principal de la aplicación
-├── Chunks.xlsx                 # Base de datos de circulares
 ├── embeddings.npy             # Archivo de embeddings pre-calculados
 ├── Imagen2.png                # Logo de la aplicación
 ├── requirements.txt           # Dependencias del proyecto
