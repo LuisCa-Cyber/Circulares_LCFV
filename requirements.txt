@@ -6,3 +6,4 @@ faiss-cpu
 nltk==3.8.1
 python-dotenv
 openpyxl
+unidecode
