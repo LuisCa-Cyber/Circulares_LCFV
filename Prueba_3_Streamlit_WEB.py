@@ -88,12 +88,12 @@ def load_or_generate_embeddings():
         # Cargar embeddings desde el archivo si ya existen
         embeddings = np.load(EMBEDDINGS_FILE)
         print("Embeddings cargados desde archivo.")
-    # else:
-    #     # Generar embeddings si no existen
-    #     embeddings = [get_openai_embedding(client, text) for text in normalized_texts]
-    #     embeddings = np.array(embeddings)
-    #     np.save(EMBEDDINGS_FILE, embeddings)  # Guardar como archivo .npy
-    #     print(f"Embeddings generados y guardados en {EMBEDDINGS_FILE}.")
+    else:
+        # Generar embeddings si no existen
+        embeddings = [get_openai_embedding(client, text) for text in normalized_texts]
+        embeddings = np.array(embeddings)
+        np.save(EMBEDDINGS_FILE, embeddings)  # Guardar como archivo .npy
+        print(f"Embeddings generados y guardados en {EMBEDDINGS_FILE}.")
     return embeddings
 
 # Cargar los embeddings
