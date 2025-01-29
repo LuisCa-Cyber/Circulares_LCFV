@@ -166,7 +166,7 @@ def run_chatbot():
                 st.markdown(f"**Tú:** {content}")
         elif role == "assistant":
             with st.chat_message("assistant", avatar="🤖"):
-                st.markdown(f"**ChatBot:** {content}")
+                st.markdown(f"**Respuesta Garant-IA:** {content}")
 
     # Campo de entrada para la pregunta del usuario
     query = st.chat_input("¿En qué puedo ayudarte?")
@@ -216,9 +216,9 @@ def run_chatbot():
             partial_content = ""  # Inicializar contenido parcial
             for char in content:
                 partial_content += char
-                placeholder.markdown(f"**ChatBot:** {partial_content}")
+                placeholder.markdown(f"**Respuesta Garant-IA:** {partial_content}")
                 time.sleep(0.005)  # Retardo entre caracteres
-            placeholder.markdown(f"**ChatBot:** {partial_content}")  # Mostrar el contenido completo al final
+            placeholder.markdown(f"**Respuesta Garant-IA:** {partial_content}")  # Mostrar el contenido completo al final
 
 
 if __name__ == "__main__":
