@@ -184,7 +184,7 @@ def run_chatbot():
         typing_placeholder = st.empty()  # Crear un espacio dinámico para el mensaje temporal
         for _ in range(3):  # Repetir el bucle animado tres veces
             for dots in ["", ".", "..", "..."]:  # Animar los puntos
-                typing_placeholder.markdown(f"**ChatBot está escribiendo{dots} 🤔**")
+                typing_placeholder.markdown(f"**Garant-IA está escribiendo{dots} 🤔**")
                 time.sleep(0.2)  # Retardo entre cada cambio
 
         # Obtener los resultados relevantes (contexto)
