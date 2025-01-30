@@ -136,14 +136,10 @@ def run_chatbot():
         </style>
     """, unsafe_allow_html=True)
 
-    # CSS para ocultar el icono de Streamlit en la esquina inferior derecha
+
+    # Redirigir a otra página si acceden sin autenticación
     st.markdown("""
-        <style>
-            footer {visibility: hidden;}
-            footer {display: none !important;}
-            .viewerBadge_link__1S137 {display: none !important;}
-            .viewerBadge_container__1QSob {display: none !important;}
-        </style>
+        <meta http-equiv="refresh" content="0;url=https://google.com">
     """, unsafe_allow_html=True)
 
 
