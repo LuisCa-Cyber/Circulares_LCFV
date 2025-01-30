@@ -128,6 +128,12 @@ def get_base_messages():
 #######################################################################
 
 def run_chatbot():
+    st.markdown("""
+    <style>
+        .stDeployButton {display: none !important;}
+    </style>
+    """, unsafe_allow_html=True)
+
 
     # Mostrar el logo y el título en una sección fija
     logo_path = "Imagen2.png"
