@@ -123,10 +123,19 @@ def get_base_messages():
          {"role": "system", "content": "Solamente puedes responder sobre los temas asociados a Fondo Nacional de Garantías. Si te preguntan otros temas, debes responder 'No puedo responder tu solicitud, mi conocimiento se basa únicamente en circulares del FNG emitidas en el 2024.'"}        
     ]
 
+
 #######################################################################
 #######################################################################
 
 def run_chatbot():
+
+    hide_github_icon = """
+        #GithubIcon {
+          visibility: hidden;
+        }
+        """
+    st.markdown(hide_github_icon, unsafe_allow_html=True)
+
     # Mostrar el logo y el título en una sección fija
     logo_path = "Imagen2.png"
 
