@@ -130,7 +130,7 @@ def get_base_messages():
 def run_chatbot():
 
     #MainMenu 
-    {visibility: hidden;}      
+    {visibility: hidden}      
     # Mostrar el logo y el título en una sección fija
     logo_path = "Imagen2.png"
 
