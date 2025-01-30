@@ -136,13 +136,6 @@ def run_chatbot():
     """, unsafe_allow_html=True)
         
 
-    st.markdown("""
-        <style>
-            footer {visibility: hidden;}
-            footer {display: none;}
-        </style>
-    """, unsafe_allow_html=True)
-
     # Mostrar el logo y el título en una sección fija
     logo_path = "Imagen2.png"
 
