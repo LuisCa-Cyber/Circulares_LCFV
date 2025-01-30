@@ -129,13 +129,6 @@ def get_base_messages():
 
 def run_chatbot():
 
-    hide_github_icon = """
-        #GithubIcon {
-          visibility: hidden;
-        }
-        """
-    st.markdown(hide_github_icon, unsafe_allow_html=True)
-
     # Mostrar el logo y el título en una sección fija
     logo_path = "Imagen2.png"
 
