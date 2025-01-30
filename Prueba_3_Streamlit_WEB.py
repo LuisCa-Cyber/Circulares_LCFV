@@ -136,9 +136,6 @@ def run_chatbot():
         </style>
     """, unsafe_allow_html=True)
 
-
-
-
     # Mostrar el logo y el título en una sección fija
     logo_path = "Imagen2.png"
 
