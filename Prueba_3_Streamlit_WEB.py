@@ -134,14 +134,13 @@ def run_chatbot():
             .stApp header {visibility: hidden;}
         </style>
     """, unsafe_allow_html=True)
-    
+        
     st.markdown("""
         <style>
             footer {visibility: hidden;}
-            #MainMenu {visibility: hidden;}
+            .st-emotion-cache-1v0mbdj {display: none;}
         </style>
     """, unsafe_allow_html=True)
-
 
     # Mostrar el logo y el título en una sección fija
     logo_path = "Imagen2.png"
