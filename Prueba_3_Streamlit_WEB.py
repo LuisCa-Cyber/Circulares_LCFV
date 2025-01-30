@@ -128,6 +128,21 @@ def get_base_messages():
 #######################################################################
 
 def run_chatbot():
+    # Ocultar el icono de GitHub en Streamlit
+    st.markdown("""
+        <style>
+            .stApp header {visibility: hidden;}
+        </style>
+    """, unsafe_allow_html=True)
+    
+    
+    st.markdown("""
+        <style>
+            footer {display: none !important;}
+            .viewerBadge_container__1QSob {display: none !important;}
+        </style>
+    """, unsafe_allow_html=True)
+
         
 
     # Mostrar el logo y el título en una sección fija
