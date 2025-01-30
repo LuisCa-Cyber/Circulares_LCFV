@@ -136,6 +136,34 @@ def run_chatbot():
         </style>
     """, unsafe_allow_html=True)
 
+    # Código CSS + JavaScript para ocultar el botón de Streamlit
+    hide_streamlit_style = """
+        <style>
+            /* Ocultar el footer estándar */
+            footer {visibility: hidden !important; display: none !important;}
+    
+            /* Ocultar el botón de Streamlit Community Cloud */
+            .stDeployButton {display: none !important;}
+            .viewerBadge_container__1QSob {display: none !important;}
+            .viewerBadge_link__1S137 {display: none !important;}
+        </style>
+    
+        <script>
+            // Esperar hasta que se renderice la página completamente
+            document.addEventListener("DOMContentLoaded", function() {
+                setTimeout(function() {
+                    let badge = document.querySelector('div[class*="viewerBadge_container__"]');
+                    if (badge) {
+                        badge.style.display = 'none';
+                    }
+                }, 1000);
+            });
+        </script>
+    """
+    
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+
     # Mostrar el logo y el título en una sección fija
     logo_path = "Imagen2.png"
 
