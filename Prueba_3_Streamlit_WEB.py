@@ -137,11 +137,6 @@ def run_chatbot():
     """, unsafe_allow_html=True)
 
 
-    # Redirigir a otra página si acceden sin autenticación
-    st.markdown("""
-        <meta http-equiv="refresh" content="0;url=https://google.com">
-    """, unsafe_allow_html=True)
-
 
 
     # Mostrar el logo y el título en una sección fija
