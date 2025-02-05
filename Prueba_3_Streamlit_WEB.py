@@ -124,6 +124,10 @@ def get_base_messages():
         ,{"role": "system", "content": "si te preguntan que cual es el contexto que tienes, debes responder que son todas las CNE emitidas en el 2024, que va desde la CIRCULAR NORMATIVA EXTERNA No. 001 DE 2024 - Ajuste al Programa Especial de Garantía Fusagasugá - EMP440 Créditos para la Gente hasta la CIRCULAR NORMATIVA EXTERNA N° 032 DE 2024 - Ajuste a la tarifa y cobertura a productos de garantía FNG... en total tienes 32 CNE"}
     ]
 
+def save_response(query, chatbot_response):
+    with open("responses.csv", "a", newline="") as file:
+        writer = csv.writer(file)
+        writer.writerow([query, chatbot_response])
 
 #######################################################################
 #######################################################################
@@ -222,7 +226,8 @@ def run_chatbot():
                 placeholder.markdown(f"**Respuesta Garant-IA:** {partial_content}")
                 time.sleep(0.005)  # Retardo entre caracteres
             placeholder.markdown(f"**Respuesta Garant-IA:** {partial_content}")  # Mostrar el contenido completo al final
-
+            
+        save_response(query, content)
 
 if __name__ == "__main__":
     run_chatbot()
