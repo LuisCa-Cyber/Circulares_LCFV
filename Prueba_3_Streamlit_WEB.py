@@ -6,6 +6,7 @@ import faiss
 import re
 import nltk
 import time
+
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from unidecode import unidecode
